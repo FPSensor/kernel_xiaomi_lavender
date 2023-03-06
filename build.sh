@@ -8,10 +8,10 @@
 KERNEL_DIR="$(pwd)"
 
 # Zip Name
-ZIPNAME="Nexus-EAS"
+ZIPNAME="LazyKernel"
 
 # Specify compiler ( eva , azure , proton , arter , aosp & nexus )
-COMPILER=nexus
+COMPILER=proton
 
 # Device Name and Model
 MODEL=Redmi Note 7
@@ -54,7 +54,7 @@ LINKER=ld.lld
 IMAGE=$(pwd)/out/arch/arm64/boot/Image.gz-dtb
 
 # Verbose Build
-VERBOSE=0
+VERBOSE=1
 
 # Kernel Version
 KERVER=$(make kernelversion)
@@ -66,7 +66,7 @@ DATE=$(TZ=Asia/Kolkata date +"%Y%m%d-%T")
 START=$(date +"%s")
 TANGGAL=$(date +"%F%S")
 
-FINAL_ZIP=${ZIPNAME}-v10.2-${VERSION}-${DEVICE}-${TANGGAL}.zip
+FINAL_ZIP=${ZIPNAME}-v1.0-${VERSION}-${DEVICE}-${TANGGAL}.zip
 ##----------------------------------------------------------##
 
 # Cloning Dependencies
